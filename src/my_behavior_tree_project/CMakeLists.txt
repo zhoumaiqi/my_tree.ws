@@ -40,8 +40,28 @@ ament_target_dependencies(main
   rclcpp 
   std_msgs)
 
+# 添加共享库
+add_library(my_behavior_tree_nodes SHARED
+  /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/rotate_chassis.cpp
+  /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/is_game_started.cpp
+)
+
+# 链接库
+target_link_libraries(my_behavior_tree_nodes 
+  ${behaviortree_cpp_v3_LIBRARIES}
+  ${rclcpp_LIBRARIES}
+  ${std_msgs_LIBRARIES}
+)
+
+# 声明ament依赖
+ament_target_dependencies(my_behavior_tree_nodes 
+  behaviortree_cpp_v3 
+  rclcpp 
+  std_msgs
+)
+
 # 安装目标
-install(TARGETS main
+install(TARGETS main my_behavior_tree_nodes
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

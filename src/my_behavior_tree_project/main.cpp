@@ -23,6 +23,10 @@ int main()
     std::string xml_content((std::istreambuf_iterator<char>(xml_file)), std::istreambuf_iterator<char>());
     auto tree = factory.createTreeFromText(xml_content);
 
+    // 设置黑板变量
+    tree.rootBlackboard()->set("game_started", true);
+    tree.rootBlackboard()->set("rotation_angle", 90.0);
+
     // 执行行为树
     BT::NodeStatus status = tree.tickRoot();
     std::cout << "Behavior Tree execution finished with status: " << BT::toStr(status) << std::endl;

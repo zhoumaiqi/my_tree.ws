@@ -10,12 +10,15 @@ public:
         : BT::SyncActionNode(name, config) {}
 
     static BT::PortsList providedPorts() {
-        return {};
+        return { BT::InputPort<double>("angle") };
     }
 
     BT::NodeStatus tick() override {
-        // Your implementation here
-        std::cout<<"RotateChassis tick"<<std::endl;
+        double angle;
+        if (!getInput<double>("angle", angle)) {
+            throw BT::RuntimeError("missing required input [angle]");
+        }
+        std::cout << "RotateChassis tick: rotating by " << angle << " degrees" << std::endl;
         return BT::NodeStatus::SUCCESS;
     }
 };

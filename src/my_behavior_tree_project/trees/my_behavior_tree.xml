@@ -1,9 +1,8 @@
-<!-- my_tree.ws/src/my_behavior_tree_project/trees/my_behavior_tree.xml -->
 <root main_tree_to_execute="MainTree">
     <BehaviorTree ID="MainTree">
         <Sequence name="root_sequence">
-            <IsGameStarted/>
-            <RotateChassis/>
+            <IsGameStarted game_started="{game_started}" />
+            <RotateChassis angle="{rotation_angle}" />
         </Sequence>
     </BehaviorTree>
 </root>
