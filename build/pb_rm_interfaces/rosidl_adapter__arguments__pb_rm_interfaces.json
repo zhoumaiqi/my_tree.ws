@@ -1,0 +1,13 @@
+{
+  "package_name": "pb_rm_interfaces",
+  "non_idl_tuples": [
+    "/home/zhoumaiqi/my_tree.ws/src/pb_rm_interfaces:msg/referee/EventData.msg",
+    "/home/zhoumaiqi/my_tree.ws/src/pb_rm_interfaces:msg/referee/GameRobotHP.msg",
+    "/home/zhoumaiqi/my_tree.ws/src/pb_rm_interfaces:msg/referee/GameStatus.msg",
+    "/home/zhoumaiqi/my_tree.ws/src/pb_rm_interfaces:msg/referee/GroundRobotPosition.msg",
+    "/home/zhoumaiqi/my_tree.ws/src/pb_rm_interfaces:msg/referee/RfidStatus.msg",
+    "/home/zhoumaiqi/my_tree.ws/src/pb_rm_interfaces:msg/referee/RobotStatus.msg",
+    "/home/zhoumaiqi/my_tree.ws/src/pb_rm_interfaces:msg/GimbalCmd.msg",
+    "/home/zhoumaiqi/my_tree.ws/src/pb_rm_interfaces:msg/ShootCmd.msg"
+  ]
+}

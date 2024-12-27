@@ -1,25 +1,28 @@
 #ifndef IS_GAME_STARTED_H
 #define IS_GAME_STARTED_H
 
+#include <string>
 #include <behaviortree_cpp_v3/condition_node.h>
+#include <rclcpp/rclcpp.hpp>
+#include <pb_rm_interfaces/msg/game_status.hpp>
 
 class IsGameStarted : public BT::ConditionNode
 {
 public:
-    IsGameStarted(const std::string& name, const BT::NodeConfiguration& config)
-        : BT::ConditionNode(name, config) {}
+    IsGameStarted(const std::string& name, const BT::NodeConfiguration& config);
 
-    static BT::PortsList providedPorts() {
-        return { BT::InputPort<bool>("game_started") };
-    }
+    static BT::PortsList providedPorts();
 
-    BT::NodeStatus tick() override {
-        bool game_started;
-        if (!getInput<bool>("game_started", game_started)) {
-            throw BT::RuntimeError("missing required input [game_started]");
-        }
-        return game_started ? BT::NodeStatus::SUCCESS : BT::NodeStatus::FAILURE;
-    }
+    BT::NodeStatus tick() override;
+
+private:
+    IsGameStarted(const std::string& name, const BT::NodeConfiguration& config, rclcpp::Node::SharedPtr node);
+
+    void gameStatusCallback(const pb_rm_interfaces::msg::GameStatus::SharedPtr msg);
+
+    rclcpp::Node::SharedPtr node_;
+    rclcpp::Subscription<pb_rm_interfaces::msg::GameStatus>::SharedPtr subscription_;
+    bool game_started_;
 };
 
 #endif // IS_GAME_STARTED_H

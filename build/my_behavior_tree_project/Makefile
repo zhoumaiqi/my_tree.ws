@@ -247,6 +247,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+nodes/behavior_tree_node.o: nodes/behavior_tree_node.cpp.o
+.PHONY : nodes/behavior_tree_node.o
+
+# target to build an object file
+nodes/behavior_tree_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/nodes/behavior_tree_node.cpp.o
+.PHONY : nodes/behavior_tree_node.cpp.o
+
+nodes/behavior_tree_node.i: nodes/behavior_tree_node.cpp.i
+.PHONY : nodes/behavior_tree_node.i
+
+# target to preprocess a source file
+nodes/behavior_tree_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/nodes/behavior_tree_node.cpp.i
+.PHONY : nodes/behavior_tree_node.cpp.i
+
+nodes/behavior_tree_node.s: nodes/behavior_tree_node.cpp.s
+.PHONY : nodes/behavior_tree_node.s
+
+# target to generate assembly for a file
+nodes/behavior_tree_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/nodes/behavior_tree_node.cpp.s
+.PHONY : nodes/behavior_tree_node.cpp.s
+
 nodes/is_game_started.o: nodes/is_game_started.cpp.o
 .PHONY : nodes/is_game_started.o
 
@@ -273,6 +297,30 @@ nodes/is_game_started.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/nodes/is_game_started.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_behavior_tree_nodes.dir/build.make CMakeFiles/my_behavior_tree_nodes.dir/nodes/is_game_started.cpp.s
 .PHONY : nodes/is_game_started.cpp.s
+
+nodes/register_nodes.o: nodes/register_nodes.cpp.o
+.PHONY : nodes/register_nodes.o
+
+# target to build an object file
+nodes/register_nodes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/nodes/register_nodes.cpp.o
+.PHONY : nodes/register_nodes.cpp.o
+
+nodes/register_nodes.i: nodes/register_nodes.cpp.i
+.PHONY : nodes/register_nodes.i
+
+# target to preprocess a source file
+nodes/register_nodes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/nodes/register_nodes.cpp.i
+.PHONY : nodes/register_nodes.cpp.i
+
+nodes/register_nodes.s: nodes/register_nodes.cpp.s
+.PHONY : nodes/register_nodes.s
+
+# target to generate assembly for a file
+nodes/register_nodes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/nodes/register_nodes.cpp.s
+.PHONY : nodes/register_nodes.cpp.s
 
 nodes/rotate_chassis.o: nodes/rotate_chassis.cpp.o
 .PHONY : nodes/rotate_chassis.o
@@ -321,9 +369,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... nodes/behavior_tree_node.o"
+	@echo "... nodes/behavior_tree_node.i"
+	@echo "... nodes/behavior_tree_node.s"
 	@echo "... nodes/is_game_started.o"
 	@echo "... nodes/is_game_started.i"
 	@echo "... nodes/is_game_started.s"
+	@echo "... nodes/register_nodes.o"
+	@echo "... nodes/register_nodes.i"
+	@echo "... nodes/register_nodes.s"
 	@echo "... nodes/rotate_chassis.o"
 	@echo "... nodes/rotate_chassis.i"
 	@echo "... nodes/rotate_chassis.s"

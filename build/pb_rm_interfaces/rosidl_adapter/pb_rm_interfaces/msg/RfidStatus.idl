@@ -1,0 +1,102 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pb_rm_interfaces/msg/referee/RfidStatus.msg
+// generated code does not contain a copyright notice
+
+
+module pb_rm_interfaces {
+  module msg {
+    module RfidStatus_Constants {
+      @verbatim (language="comment", text=
+        "RFID card not detected")
+      const boolean NOT_DETECTED = FALSE;
+      @verbatim (language="comment", text=
+        "RFID card detected")
+      const boolean DETECTED = TRUE;
+    };
+    @verbatim (language="comment", text=
+      "msg for RFID detection system (V1.6.4 0x0209)用于RFID检测系统" "\n"
+      "const for RFID status")
+    struct RfidStatus {
+      @verbatim (language="comment", text=
+        "对应是否检测到了对应站点的RFID卡" "\n"
+        "己方基地增益点")
+      boolean base_gain_point;
+
+      @verbatim (language="comment", text=
+        "己方环形高地增益点")
+      boolean circular_highland_gain_point;
+
+      @verbatim (language="comment", text=
+        "对方环形高地增益点")
+      boolean enemy_circular_highland_gain_point;
+
+      @verbatim (language="comment", text=
+        "己方 R3/B3 梯形高地增益点")
+      boolean friendly_r3_b3_gain_point;
+
+      @verbatim (language="comment", text=
+        "对方 R3/B3 梯形高地增益点")
+      boolean enemy_r3_b3_gain_point;
+
+      @verbatim (language="comment", text=
+        "己方 R4/B4 梯形高地增益点")
+      boolean friendly_r4_b4_gain_point;
+
+      @verbatim (language="comment", text=
+        "对方 R4/B4 梯形高地增益点")
+      boolean enemy_r4_b4_gain_point;
+
+      @verbatim (language="comment", text=
+        "己方能量机关激活点")
+      boolean energy_mechanism_gain_point;
+
+      @verbatim (language="comment", text=
+        "己方飞坡增益点（靠近己方一侧飞坡前）")
+      boolean friendly_fly_ramp_front_gain_point;
+
+      @verbatim (language="comment", text=
+        "己方飞坡增益点（靠近己方一侧飞坡后）")
+      boolean friendly_fly_ramp_back_gain_point;
+
+      @verbatim (language="comment", text=
+        "对方飞坡增益点（靠近对方一侧飞坡前）")
+      boolean enemy_fly_ramp_front_gain_point;
+
+      @verbatim (language="comment", text=
+        "对方飞坡增益点（靠近对方一侧飞坡后）")
+      boolean enemy_fly_ramp_back_gain_point;
+
+      @verbatim (language="comment", text=
+        "己方前哨站增益点")
+      boolean friendly_outpost_gain_point;
+
+      @verbatim (language="comment", text=
+        "己方补血点（检测到任一均视为激活）")
+      boolean friendly_healing_point;
+
+      @verbatim (language="comment", text=
+        "己方哨兵巡逻区")
+      boolean friendly_sentry_patrol_area;
+
+      @verbatim (language="comment", text=
+        "对方哨兵巡逻区")
+      boolean enemy_sentry_patrol_area;
+
+      @verbatim (language="comment", text=
+        "己方大资源岛增益点")
+      boolean friendly_big_resource_island;
+
+      @verbatim (language="comment", text=
+        "对方大资源岛增益点")
+      boolean enemy_big_resource_island;
+
+      @verbatim (language="comment", text=
+        "己方兑换区")
+      boolean friendly_exchange_area;
+
+      @verbatim (language="comment", text=
+        "中心增益点 RFID 卡状态（仅 RMUL 适用），1 为已检测到")
+      boolean center_gain_point;
+    };
+  };
+};

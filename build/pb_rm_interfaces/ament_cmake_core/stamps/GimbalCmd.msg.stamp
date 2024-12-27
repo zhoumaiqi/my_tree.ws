@@ -1,0 +1,5 @@
+# cmd msg for controlling gimbal
+# position control, set position by ABSOLUTE ANGLE (rad)
+
+float32 yaw#云台的偏航角
+float32 pitch#云台的俯仰角

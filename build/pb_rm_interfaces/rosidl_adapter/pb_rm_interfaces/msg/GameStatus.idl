@@ -1,0 +1,42 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pb_rm_interfaces/msg/referee/GameStatus.msg
+// generated code does not contain a copyright notice
+
+
+module pb_rm_interfaces {
+  module msg {
+    module GameStatus_Constants {
+      @verbatim (language="comment", text=
+        "game not start")
+      const uint8 NOT_START = 0;
+      @verbatim (language="comment", text=
+        "preparation stage (free control for robot, disable referee system)")
+      const uint8 PREPARATION = 1;
+      @verbatim (language="comment", text=
+        "referee system self-checking stage (unable to control robot, and initialize all referee system data).")
+      const uint8 SELF_CHECKING = 2;
+      @verbatim (language="comment", text=
+        "5 seconds count down stage (unable to control robot, enable referee system)")
+      const uint8 COUNT_DOWN = 3;
+      @verbatim (language="comment", text=
+        "running stage (free control for robot, enable referee system)")
+      const uint8 RUNNING = 4;
+      @verbatim (language="comment", text=
+        "game over stage (unable to control robot, disable referee system)")
+      const uint8 GAME_OVER = 5;
+    };
+    @verbatim (language="comment", text=
+      " msg for referee system (V1.6.4 0x0001)" "\n"
+      " constants for game progress" "\n"
+      "游戏状态")
+    struct GameStatus {
+      @default (value=0)
+      uint8 game_progress;
+
+      @verbatim (language="comment", text=
+        "seconds")
+      @default (value=0)
+      int32 stage_remain_time;
+    };
+  };
+};

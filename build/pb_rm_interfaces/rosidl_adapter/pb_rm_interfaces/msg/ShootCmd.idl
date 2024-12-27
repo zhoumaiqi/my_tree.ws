@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pb_rm_interfaces/msg/ShootCmd.msg
+// generated code does not contain a copyright notice
+
+
+module pb_rm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "cmd msg for shooter")
+    struct ShootCmd {
+      @verbatim (language="comment", text=
+        " control data" "\n"
+        "要发射的弹丸数量")
+      uint8 projectile_num;
+    };
+  };
+};

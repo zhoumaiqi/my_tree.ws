@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pb_rm_interfaces/msg/GimbalCmd.msg
+// generated code does not contain a copyright notice
+
+
+module pb_rm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "cmd msg for controlling gimbal" "\n"
+      "position control, set position by ABSOLUTE ANGLE (rad)")
+    struct GimbalCmd {
+      @verbatim (language="comment", text=
+        "云台的偏航角")
+      float yaw;
+
+      @verbatim (language="comment", text=
+        "云台的俯仰角")
+      float pitch;
+    };
+  };
+};

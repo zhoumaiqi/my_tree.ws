@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "/home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/behavior_tree_node.cpp" "CMakeFiles/main.dir/nodes/behavior_tree_node.cpp.o" "gcc" "CMakeFiles/main.dir/nodes/behavior_tree_node.cpp.o.d"
   "/home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/is_game_started.cpp" "CMakeFiles/main.dir/nodes/is_game_started.cpp.o" "gcc" "CMakeFiles/main.dir/nodes/is_game_started.cpp.o.d"
+  "/home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/register_nodes.cpp" "CMakeFiles/main.dir/nodes/register_nodes.cpp.o" "gcc" "CMakeFiles/main.dir/nodes/register_nodes.cpp.o.d"
   "/home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/rotate_chassis.cpp" "CMakeFiles/main.dir/nodes/rotate_chassis.cpp.o" "gcc" "CMakeFiles/main.dir/nodes/rotate_chassis.cpp.o.d"
   )
 

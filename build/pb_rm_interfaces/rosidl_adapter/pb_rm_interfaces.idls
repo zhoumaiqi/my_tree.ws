@@ -1,0 +1,8 @@
+/home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_adapter/pb_rm_interfaces:msg/EventData.idl
+/home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_adapter/pb_rm_interfaces:msg/GameRobotHP.idl
+/home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_adapter/pb_rm_interfaces:msg/GameStatus.idl
+/home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_adapter/pb_rm_interfaces:msg/GroundRobotPosition.idl
+/home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_adapter/pb_rm_interfaces:msg/RfidStatus.idl
+/home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_adapter/pb_rm_interfaces:msg/RobotStatus.idl
+/home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_adapter/pb_rm_interfaces:msg/GimbalCmd.idl
+/home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_adapter/pb_rm_interfaces:msg/ShootCmd.idl

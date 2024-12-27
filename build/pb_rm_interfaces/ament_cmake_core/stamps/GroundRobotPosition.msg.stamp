@@ -1,0 +1,12 @@
+# msg for RFID detection system (V1.6.4 0x020B)
+#RFID系统多个对的位置信息
+float32 hero_x    #英雄
+float32 hero_y    
+float32 engineer_x    #工程
+float32 engineer_y
+float32 standard_3_x    #步兵3，4，5
+float32 standard_3_y
+float32 standard_4_x
+float32 standard_4_y
+float32 standard_5_x
+float32 standard_5_y
