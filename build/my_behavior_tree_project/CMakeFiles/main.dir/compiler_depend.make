@@ -1421,6 +1421,7 @@ CMakeFiles/main.dir/nodes/behavior_tree_node.cpp.o: /home/zhoumaiqi/my_tree.ws/s
   /home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_generator_cpp/pb_rm_interfaces/msg/detail/game_status__struct.hpp \
   /home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_generator_cpp/pb_rm_interfaces/msg/detail/game_status__builder.hpp \
   /home/zhoumaiqi/my_tree.ws/build/pb_rm_interfaces/rosidl_generator_cpp/pb_rm_interfaces/msg/detail/game_status__traits.hpp \
+  /opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h \
   /opt/ros/humble/include/behaviortree_cpp_v3/behavior_tree.h \
   /opt/ros/humble/include/behaviortree_cpp_v3/controls/parallel_node.h \
   /opt/ros/humble/include/behaviortree_cpp_v3/control_node.h \
@@ -1453,8 +1454,7 @@ CMakeFiles/main.dir/nodes/behavior_tree_node.cpp.o: /home/zhoumaiqi/my_tree.ws/s
   /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/bits/stl_queue.h \
-  /opt/ros/humble/include/behaviortree_cpp_v3/decorators/delay_node.h \
-  /opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h
+  /opt/ros/humble/include/behaviortree_cpp_v3/decorators/delay_node.h
 
 CMakeFiles/main.dir/nodes/is_game_started.cpp.o: /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/is_game_started.cpp \
   /usr/include/stdc-predef.h \
