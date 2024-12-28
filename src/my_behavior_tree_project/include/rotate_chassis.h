@@ -2,25 +2,19 @@
 #define ROTATE_CHASSIS_H
 
 #include <behaviortree_cpp_v3/action_node.h>
+#include <rclcpp/rclcpp.hpp>
 
 class RotateChassis : public BT::SyncActionNode
 {
 public:
-    RotateChassis(const std::string& name, const BT::NodeConfiguration& config)
-        : BT::SyncActionNode(name, config) {}
+    RotateChassis(const std::string& name, const BT::NodeConfiguration& config, rclcpp::Node::SharedPtr node);
 
-    static BT::PortsList providedPorts() {
-        return { BT::InputPort<double>("angle") };
-    }
+    static BT::PortsList providedPorts();
 
-    BT::NodeStatus tick() override {
-        double angle;
-        if (!getInput<double>("angle", angle)) {
-            throw BT::RuntimeError("missing required input [angle]");
-        }
-        std::cout << "RotateChassis tick: rotating by " << angle << " degrees" << std::endl;
-        return BT::NodeStatus::SUCCESS;
-    }
+    BT::NodeStatus tick() override;
+
+private:
+    rclcpp::Node::SharedPtr node_;
 };
 
 #endif // ROTATE_CHASSIS_H

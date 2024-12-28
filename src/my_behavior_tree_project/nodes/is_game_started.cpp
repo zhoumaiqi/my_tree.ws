@@ -4,14 +4,15 @@
 
 IsGameStarted::IsGameStarted(const std::string& name, const BT::NodeConfiguration& config, rclcpp::Node::SharedPtr node)
     : ConditionNode(name, config), node_(node), game_started_(false)
-{   //创建一个订阅者，订阅game_status话题
+{
+    // 创建一个订阅者，订阅game_status话题
     subscription_ = node_->create_subscription<pb_rm_interfaces::msg::GameStatus>(
         "game_status", 10, std::bind(&IsGameStarted::gameStatusCallback, this, std::placeholders::_1));
-}   //回调函数为gameStatusCallback
+}
 
 BT::PortsList IsGameStarted::providedPorts()
 {
-    return {};//静态函数，返回节点的端口
+    return {};
 }
 
 BT::NodeStatus IsGameStarted::tick()

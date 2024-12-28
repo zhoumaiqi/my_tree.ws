@@ -2,10 +2,11 @@
 #define IS_GAME_STARTED_H
 
 #include <string>
-#include <mutex>
+#include <atomic>
 #include <behaviortree_cpp_v3/condition_node.h>
 #include <rclcpp/rclcpp.hpp>
 #include <pb_rm_interfaces/msg/game_status.hpp>
+#include <mutex>
 
 class IsGameStarted : public BT::ConditionNode
 {
@@ -21,8 +22,8 @@ private:
 
     rclcpp::Node::SharedPtr node_;
     rclcpp::Subscription<pb_rm_interfaces::msg::GameStatus>::SharedPtr subscription_;
-    bool game_started_;
     std::mutex mutex_;
+    std::atomic<bool> game_started_{false};
 };
 
 #endif // IS_GAME_STARTED_H
