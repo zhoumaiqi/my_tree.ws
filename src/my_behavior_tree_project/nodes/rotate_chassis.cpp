@@ -1,27 +1,26 @@
 #include "rotate_chassis.h"
-#include <behaviortree_cpp_v3/behavior_tree.h>
-#include <behaviortree_cpp_v3/bt_factory.h>
+#include <iostream>
 
-RotateChassis::RotateChassis(const std::string& name, const BT::NodeConfiguration& config, rclcpp::Node::SharedPtr node)
-    : BT::SyncActionNode(name, config), node_(node)
+RotateChassis::RotateChassis(const std::string& name, const BT::NodeConfiguration& config)
+    : AsyncActionNode(name, config)
 {
 }
 
 BT::PortsList RotateChassis::providedPorts()
 {
-    return { BT::InputPort<double>("angle") };
+    return { BT::InputPort<double>("rotation_angle") };
 }
 
 BT::NodeStatus RotateChassis::tick()
 {
-    double angle;
-    if (!getInput<double>("angle", angle))
+    double rotation_angle;
+    if (!getInput<double>("rotation_angle", rotation_angle))
     {
-        throw BT::RuntimeError("missing required input [angle]");
+        throw BT::RuntimeError("missing required input [rotation_angle]");
     }
 
-    RCLCPP_INFO(rclcpp::get_logger("RotateChassis"), "Rotating chassis by %f degrees", angle);
-    // 在这里添加旋转底盘的逻辑
+    // 执行旋转底盘的动作
+    std::cout << "Rotating chassis by " << rotation_angle << " degrees." << std::endl;
 
     return BT::NodeStatus::SUCCESS;
 }

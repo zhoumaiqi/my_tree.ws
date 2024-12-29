@@ -2,16 +2,15 @@
 #include <rclcpp/rclcpp.hpp>
 #include <iostream>
 #include <fstream>
+#include <thread>// 为了创建一个线程来处理 ROS 2 的回调
 #include "rotate_chassis.h"
 #include "is_game_started.h"
 
 // 自定义注册函数
 template <typename T>
-void RegisterNode(BT::BehaviorTreeFactory& factory, const std::string& name, rclcpp::Node::SharedPtr node)
+void RegisterNode(BT::BehaviorTreeFactory& factory, const std::string& name)
 {
-    factory.registerBuilder<T>(name, [node](const std::string& name, const BT::NodeConfiguration& config) {
-        return std::make_unique<T>(name, config, node);
-    });
+    factory.registerNodeType<T>(name);
 }
 
 int main(int argc, char** argv)
@@ -24,8 +23,8 @@ int main(int argc, char** argv)
     BT::BehaviorTreeFactory factory;
 
     // 注册自定义节点
-    RegisterNode<IsGameStarted>(factory, "IsGameStarted", node);
-    RegisterNode<RotateChassis>(factory, "RotateChassis", node);
+    RegisterNode<IsGameStarted>(factory, "IsGameStarted");
+    RegisterNode<RotateChassis>(factory, "RotateChassis");
 
     // 从XML文件加载行为树
     std::ifstream xml_file("src/my_behavior_tree_project/trees/my_behavior_tree.xml");
@@ -53,9 +52,9 @@ int main(int argc, char** argv)
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
 
-    // 等待ROS线程结束
+    // 关闭 ROS 2
+    rclcpp::shutdown();
     ros_thread.join();
 
-    rclcpp::shutdown();
     return 0;
 }

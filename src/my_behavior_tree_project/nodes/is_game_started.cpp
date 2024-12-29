@@ -2,9 +2,12 @@
 #include <behaviortree_cpp_v3/behavior_tree.h>
 #include <behaviortree_cpp_v3/bt_factory.h>
 
-IsGameStarted::IsGameStarted(const std::string& name, const BT::NodeConfiguration& config, rclcpp::Node::SharedPtr node)
-    : ConditionNode(name, config), node_(node), game_started_(false)
+IsGameStarted::IsGameStarted(const std::string& name, const BT::NodeConfiguration& config)
+    : ConditionNode(name, config), game_started_(false)
 {
+    // 获取节点
+    node_ = rclcpp::Node::make_shared("is_game_started_node");
+
     // 创建一个订阅者，订阅game_status话题
     subscription_ = node_->create_subscription<pb_rm_interfaces::msg::GameStatus>(
         "game_status", 10, std::bind(&IsGameStarted::gameStatusCallback, this, std::placeholders::_1));
