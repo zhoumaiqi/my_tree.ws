@@ -1,12 +1,8 @@
 <root main_tree_to_execute="MainTree">
     <BehaviorTree ID="MainTree">
-        <Blackboard>
-            <Register name="is_game_started" type="bool"/>
-            <Register name="rotation_angle" type="float"/>
-        </Blackboard>
         <Sequence name="root_sequence">
             <IsGameStarted/>
-            <RotateChassis angle="{rotation_angle}"/>
+            <RotateChassis rotation_angle="{rotation_angle}"/>
         </Sequence>
     </BehaviorTree>
 </root>
