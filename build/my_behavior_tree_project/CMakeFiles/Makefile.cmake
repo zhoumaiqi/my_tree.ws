@@ -670,6 +670,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/my_behavior_tree_project_uninstall.dir/DependInfo.cmake"
-  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/behavior_tree_node.dir/DependInfo.cmake"
   "CMakeFiles/my_behavior_tree_nodes.dir/DependInfo.cmake"
   )

@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "main" "my_behavior_tree_nodes" "DESTINATION" "lib/my_behavior_tree_project")
+# install("TARGETS" "behavior_tree_node" "my_behavior_tree_nodes" "DESTINATION" "lib/my_behavior_tree_project")
 include("/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_behavior_tree_project" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

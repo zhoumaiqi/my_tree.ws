@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/behavior_tree_node.dir/all
 all: CMakeFiles/my_behavior_tree_nodes.dir/all
 .PHONY : all
 
@@ -74,7 +74,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/my_behavior_tree_project_uninstall.dir/clean
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/behavior_tree_node.dir/clean
 clean: CMakeFiles/my_behavior_tree_nodes.dir/clean
 .PHONY : clean
 
@@ -131,30 +131,30 @@ CMakeFiles/my_behavior_tree_project_uninstall.dir/clean:
 .PHONY : CMakeFiles/my_behavior_tree_project_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/behavior_tree_node.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/behavior_tree_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target behavior_tree_node"
+.PHONY : CMakeFiles/behavior_tree_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
+CMakeFiles/behavior_tree_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/behavior_tree_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/behavior_tree_node.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
+behavior_tree_node: CMakeFiles/behavior_tree_node.dir/rule
+.PHONY : behavior_tree_node
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/behavior_tree_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/clean
+.PHONY : CMakeFiles/behavior_tree_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/my_behavior_tree_nodes.dir
