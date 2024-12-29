@@ -247,30 +247,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-nodes/behavior_tree_node.o: nodes/behavior_tree_node.cpp.o
-.PHONY : nodes/behavior_tree_node.o
-
-# target to build an object file
-nodes/behavior_tree_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o
-.PHONY : nodes/behavior_tree_node.cpp.o
-
-nodes/behavior_tree_node.i: nodes/behavior_tree_node.cpp.i
-.PHONY : nodes/behavior_tree_node.i
-
-# target to preprocess a source file
-nodes/behavior_tree_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.i
-.PHONY : nodes/behavior_tree_node.cpp.i
-
-nodes/behavior_tree_node.s: nodes/behavior_tree_node.cpp.s
-.PHONY : nodes/behavior_tree_node.s
-
-# target to generate assembly for a file
-nodes/behavior_tree_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.s
-.PHONY : nodes/behavior_tree_node.cpp.s
-
 nodes/is_game_started.o: nodes/is_game_started.cpp.o
 .PHONY : nodes/is_game_started.o
 
@@ -369,9 +345,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... nodes/behavior_tree_node.o"
-	@echo "... nodes/behavior_tree_node.i"
-	@echo "... nodes/behavior_tree_node.s"
 	@echo "... nodes/is_game_started.o"
 	@echo "... nodes/is_game_started.i"
 	@echo "... nodes/is_game_started.s"

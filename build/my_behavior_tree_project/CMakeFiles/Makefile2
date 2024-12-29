@@ -137,12 +137,12 @@ CMakeFiles/my_behavior_tree_project_uninstall.dir/clean:
 CMakeFiles/behavior_tree_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/behavior_tree_node.dir/build.make CMakeFiles/behavior_tree_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target behavior_tree_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=1,2,3,4,5 "Built target behavior_tree_node"
 .PHONY : CMakeFiles/behavior_tree_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/behavior_tree_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/behavior_tree_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles 0
 .PHONY : CMakeFiles/behavior_tree_node.dir/rule
@@ -163,7 +163,7 @@ CMakeFiles/behavior_tree_node.dir/clean:
 CMakeFiles/my_behavior_tree_nodes.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_behavior_tree_nodes.dir/build.make CMakeFiles/my_behavior_tree_nodes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_behavior_tree_nodes.dir/build.make CMakeFiles/my_behavior_tree_nodes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=7,8,9 "Built target my_behavior_tree_nodes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=6,7,8 "Built target my_behavior_tree_nodes"
 .PHONY : CMakeFiles/my_behavior_tree_nodes.dir/all
 
 # Build rule for subdir invocation for target.

@@ -111,24 +111,10 @@ CMakeFiles/behavior_tree_node.dir/nodes/is_game_started.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/behavior_tree_node.dir/nodes/is_game_started.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/is_game_started.cpp -o CMakeFiles/behavior_tree_node.dir/nodes/is_game_started.cpp.s
 
-CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o: CMakeFiles/behavior_tree_node.dir/flags.make
-CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o: /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/behavior_tree_node.cpp
-CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o: CMakeFiles/behavior_tree_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o -MF CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o.d -o CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o -c /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/behavior_tree_node.cpp
-
-CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/behavior_tree_node.cpp > CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.i
-
-CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/behavior_tree_node.cpp -o CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.s
-
 CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o: CMakeFiles/behavior_tree_node.dir/flags.make
 CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o: /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/register_nodes.cpp
 CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o: CMakeFiles/behavior_tree_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o -MF CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o.d -o CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o -c /home/zhoumaiqi/my_tree.ws/src/my_behavior_tree_project/nodes/register_nodes.cpp
 
 CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.i: cmake_force
@@ -144,7 +130,6 @@ behavior_tree_node_OBJECTS = \
 "CMakeFiles/behavior_tree_node.dir/main.cpp.o" \
 "CMakeFiles/behavior_tree_node.dir/nodes/rotate_chassis.cpp.o" \
 "CMakeFiles/behavior_tree_node.dir/nodes/is_game_started.cpp.o" \
-"CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o" \
 "CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o"
 
 # External object files for target behavior_tree_node
@@ -153,7 +138,6 @@ behavior_tree_node_EXTERNAL_OBJECTS =
 behavior_tree_node: CMakeFiles/behavior_tree_node.dir/main.cpp.o
 behavior_tree_node: CMakeFiles/behavior_tree_node.dir/nodes/rotate_chassis.cpp.o
 behavior_tree_node: CMakeFiles/behavior_tree_node.dir/nodes/is_game_started.cpp.o
-behavior_tree_node: CMakeFiles/behavior_tree_node.dir/nodes/behavior_tree_node.cpp.o
 behavior_tree_node: CMakeFiles/behavior_tree_node.dir/nodes/register_nodes.cpp.o
 behavior_tree_node: CMakeFiles/behavior_tree_node.dir/build.make
 behavior_tree_node: /opt/ros/humble/lib/librclcpp.so
@@ -1728,7 +1712,7 @@ behavior_tree_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_
 behavior_tree_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 behavior_tree_node: /opt/ros/humble/lib/librcutils.so
 behavior_tree_node: CMakeFiles/behavior_tree_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable behavior_tree_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhoumaiqi/my_tree.ws/build/my_behavior_tree_project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable behavior_tree_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/behavior_tree_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

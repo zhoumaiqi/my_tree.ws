@@ -8,7 +8,7 @@ RotateChassis::RotateChassis(const std::string& name, const BT::NodeConfiguratio
 
 BT::PortsList RotateChassis::providedPorts()
 {
-    return { BT::InputPort<double>("rotation_angle") };
+    return { BT::InputPort<double>("rotation_angle") };// 输入端口rotation_angle
 }
 
 BT::NodeStatus RotateChassis::tick()
